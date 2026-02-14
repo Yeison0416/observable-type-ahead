@@ -55,3 +55,7 @@ npm run build
 - `src/app/` — Main controller and composition
 
 ## Demo
+
+https://github.com/user-attachments/assets/1d7ec3d9-f028-402f-8c9a-80eac9ef060e
+
+
