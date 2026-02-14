@@ -1,56 +1,57 @@
-# Webpack Config TypeScript Starter
+# Observable Type-Ahead
 
-A professional starter project for **TypeScript**, **Handlebars**, and **SCSS/SASS** applications using **Webpack** as the bundler. This setup provides a modular, maintainable, and modern frontend workflow ready for development and production.
+A modular, scalable, and professional TypeScript project implementing a type-ahead (autocomplete) feature using RxJS, Handlebars, and SCSS/SASS. Built with high software standards, this project demonstrates modern frontend architecture, state management, and clean separation of concerns.
 
 ---
 
 ## Features
 
-- TypeScript support with full type safety
-- Handlebars templates precompiled and ready to use
-- SCSS/SASS modular styles
-- Webpack development server with hot-reload
-- Production-ready bundling and optimization
-- Easy-to-extend project structure
+- Type-ahead/autocomplete input with real-time filtering
+- RxJS-based observable state management
+- Modular, BEM-compliant SCSS styling
+- Handlebars templating for clean UI composition
+- Pure domain logic for business rules
+- Component-based architecture
+- TypeScript for type safety and maintainability
+- Webpack for development and production builds
 
 ## Getting Started
 
 ### Install Dependencies
 
-`npm install`
+```bash
+npm install
+```
 
 ### Run Development Server
 
-`npm start`
+```bash
+npm start
+```
 
-- Opens a local dev server
-
-- Supports live reloading for scripts, styles, and templates
+- Opens a local dev server with live reloading
 
 ### Build for Production
 
-`npm run build`
+```bash
+npm run build
+```
 
-- Generates optimized bundle in dist/
-
-- Compiles TypeScript, SCSS, and Handlebars templates
+- Generates optimized bundle in `dist/`
 
 ## Usage
 
-1. Add your TypeScript code inside src/scripts.
+1. The main controller component composes the UI and orchestrates state.
+2. State is managed via an RxJS store for predictable reactivity.
+3. Components are split by responsibility and react only to app state.
+4. Domain logic is handled by pure functions for easy testing and maintenance.
 
-2. Place SCSS styles in src/styles.
+## Folder Structure
 
-3. Add Handlebars templates in src/templates.
+- `src/app/components/` — UI components
+- `src/app/state/` — State management
+- `src/app/types/` — TypeScript types
+- `src/app/domain/` — Pure domain logic
+- `src/app/` — Main controller and composition
 
-4. Import and use templates in TypeScript like this:
-
-```
-import template from './templates/my-template.hbs';
-const html = template({ key: 'value' });
-document.body.innerHTML = html;
-```
-
-
-
-
+## Demo
