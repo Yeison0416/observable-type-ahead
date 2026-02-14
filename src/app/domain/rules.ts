@@ -1,4 +1,4 @@
-import { TypeAheadState } from '../../types/type-ahead-types';
+import { TypeAheadState } from '../types/type-ahead-types';
 
 export function initTypeAheadState(): TypeAheadState {
     return {

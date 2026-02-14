@@ -2,7 +2,7 @@ import template from './type-ahead.hbs';
 
 import { Form } from './components/form/form';
 
-import { initTypeAheadState } from './components/domain/rules';
+import { initTypeAheadState } from './domain/rules';
 
 import { typeAheadStateStore } from './state/type-ahead-state-store';
 
