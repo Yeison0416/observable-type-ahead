@@ -1,8 +1,10 @@
 export type Continents = string[];
-export type SearchTerm = string[];
+export type SearchResults = string[];
+export type SearchTerm = string;
 
 export type TypeAheadState = {
-    continents: Continents;
+    readonly continents: Continents;
+    searchResults: SearchResults;
     searchTerm: SearchTerm;
 };
 
